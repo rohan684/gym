@@ -1,0 +1,23 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+*{
+    font-family: 'roboto', sans-serif;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.input_search{
+    border:none;
+    outline: none;
+}
+.btn_search{
+    outline: none;
+    border:none;
+    background: white;
+}
+.input_sec{
+    background-color: white;
+    border: 1px solid black;
+    padding: 4px 8px;
+    border-radius: 14px;
+}
