@@ -21,3 +21,39 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     padding: 4px 8px;
     border-radius: 14px;
 }
+.card{
+    cursor: pointer;
+    margin:5px;
+}
+.hd{
+    font-size: 35px;
+    font-weight: 600;
+    color:#000226;
+}
+.card:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+.img{
+    margin-bottom: 35px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222)
+}
+.card-title{
+    font-weight: 600
+}
+
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }
+/* footer code*/
+footer{
+    background-color: #000226;
+    color:white;
+  }
+footer a{
+    color: white !important;
+    text-decoration: none;
+}
