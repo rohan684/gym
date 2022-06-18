@@ -7,7 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
     <link rel="stylesheet" href="style.css">
+    <script src="file.js"></script>
     <title>GYM</title>
 </head>
 <body>
@@ -23,16 +26,8 @@
               <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Features
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><a class="dropdown-item" href="#">Sign in</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Add Gym</a></li>
-                </ul>
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Add Gym</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
@@ -41,12 +36,15 @@
                 <a class="nav-link active" aria-current="page" href="#">Blogs</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <span class="input_sec">
-                <input class="me-2 input_search" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn_search" type="submit"><i class="fas fa-search"></i></button>
-              </span>
-            </form>
+            <div class="d-flex me-3">
+                <span class="login"><a href="#">Signin/</a><a href="#"> Login</a></span>
+            </div>
+            <div class="d-flex">
+                <button onclick="my_search()" class="btn_search" type="submit"><i class="fas fa-search"></i></button>
+                <form action="#" method="get">
+                  <input id="bar" type="text" placeholder="Search Here" class="Search_bar">
+                </form>
+            </div>
           </div>
         </div>
       </nav>
@@ -94,7 +92,7 @@
         <div class="hd">Why People Believe in Us</div>
         <p><small class="text-muted">Always render more and better service than <br />is expected of you, no matter what your ask may be.</small></p>
         <div class="row" style="justify-content: center">
-            <div class="card col-md-3 col-12">
+            <div class="card card1 col-md-3 col-12">
                 <div class="card-content">
                     <div class="card-body"> <img class="img" src="assets/profitables.png" />
                         <div class="shadow"></div>
@@ -105,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card col-md-3 col-12 ml-2">
+            <div class="card card1 col-md-3 col-12 ml-2">
                 <div class="card-content">
                     <div class="card-body"> <img class="img" src="assets/targets.png" />
                         <div class="card-title"> We're Unbiased </div>
@@ -115,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card col-md-3 col-12 ml-2">
+            <div class="card card1 col-md-3 col-12 ml-2">
                 <div class="card-content">
                     <div class="card-body"> <img class="img" src="assets/informations.png" />
                         <div class="card-title"> We Guide you </div>
@@ -127,7 +125,108 @@
             </div>
         </div>
     </div>
-   <!--Footer-->
+  <!--Cards carousal-->
+  <div class="container-fluid Top_gym">
+  <div class="container ">
+    <div class="row">
+        <div class="col-10">
+            <h3 class="mb-3 text-primary font-weight-bold">Top Gym In You Area </h3>
+        </div>
+        <div class="col-2 text-right">
+            <a class="btn btn-primary mb-3 mr-1 " href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card cards_crl">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYyOTA2Nzg1NQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card cards_crl">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1593505042335-f34c535a9dbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NzY5ODQxNQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card cards_crl">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card cards_crl">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1604233098531-90b71b1b17a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NzY5ODAyMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card cards_crl">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1614928228253-dc09cbc3b11c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjE4MjMyMjk0&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card cards_crl">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+   <!--End-->
+   <div style="height: 500px;">
+    
+   </div>
    <!-- Footer -->
 <footer class="page-footer font-small pt-4">
   <div class="container-fluid text-center text-md-left">
